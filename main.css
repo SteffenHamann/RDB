@@ -1,0 +1,35 @@
+.nav-sidebar > ul{
+    display:none;
+}
+
+.dropdown-header {
+    background-color: lightgrey;
+    width: 100%;
+    border : none;
+    padding: 5px 5px 5px 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.dropdown-header:hover {
+    background-color: darkgray;
+}
+
+.dropdown-item {
+    list-style: none;
+    
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    width: 100%;
+    border : none;
+    padding: 5px 5px 5px 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.submit-button:hover{
+    background-color: darkgreen;
+}
