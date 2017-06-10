@@ -33,3 +33,22 @@
 .submit-button:hover{
     background-color: darkgreen;
 }
+
+.reset-button {
+    background-color: red;
+    color: #ffffff;
+    width: 100%;
+    border : none;
+    padding: 5px 5px 5px 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.reset-button:hover{
+    background-color: darkred;
+}
+
+.right{
+    float: right;
+    margin-right:20px;
+}

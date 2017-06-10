@@ -1,23 +1,23 @@
-﻿Industry_ID;Industry_Name
-12;      Manufacturing
-82;  Government
-56;      Real estate and rental and leasing
-13;          Durable goods manufacturing
-70;      Health care and social assistance
-35;      Retail trade
-25;          Nondurable goods manufacturing
-60;      Professional, scientific, and technical services
-34;      Wholesale trade
-51;      Finance and insurance
-11;      Construction
-78;      Accommodation and food services
-65;      Administrative and waste management services
-10;      Utilities
-36;      Transportation and warehousing
-81;      Other services, except government
-45;      Information
-6;      Mining
-3;      Agriculture, forestry, fishing, and hunting
-64;      Management of companies and enterprises
-69;      Educational services
-75;      Arts, entertainment, and recreation
+INDUSTRY_ID; INDUSTRY_NAME
+12;Manufacturing
+82;Government
+56;Real estate and rental and leasing
+13;Durable goods manufacturing
+70;Health care and social assistance
+35;Retail trade
+25;Nondurable goods manufacturing
+60;Professional, scientific, and technical services
+34;Wholesale trade
+51;Finance and insurance
+11;Construction
+78;Accommodation and food services
+65;Administrative and waste management services
+10;Utilities
+36;Transportation and warehousing
+81;Other services, except government
+45;Information
+6;Mining
+3;Agriculture, forestry, fishing, and hunting
+64;Management of companies and enterprises
+69;Educational services
+75;Arts, entertainment, and recreation
