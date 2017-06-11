@@ -88,7 +88,8 @@
               <li>
                 <p style="font-size: 25px;">Stärkste Wirtschaft</p>
               </li>
-              <li><select style="margin-bottom: 10px;" class="" name="economy">
+              <li><select style="margin-bottom: 10px;" class="" name="economy"> <!-- TODO Placeholder -->
+                      <option value="" disabled selected>Wirtschaft wählen</option>
                       <option value="12">Warrenherrstellung</option>
                       <option value="82">Regierung</option>
                       <option value="56">Immobilien</option>
@@ -109,15 +110,15 @@
             <ul class="dropdown-item" id="u3">
               <div data-toggle="buttons">
                 <label class ="btn btn-default" style="float:left;">
-                  <input type="radio" class="btn btn-default" name="politic" value="trump"> Trump
+                  <input type="radio" class="btn btn-default" name="politic" value="2"> Trump
                 </label>
                 <label class ="btn btn-default" style="margin-bottom:10px; margin-right: 20%; float:right;">
-                  <input type="radio" class="btn btn-default" name="politic" value="hillary"> Hillary
+                  <input type="radio" class="btn btn-default" name="politic" value="1"> Hillary
                 </label>
               </div>
             </ul>
-            <!--<input type="reset" class="reset-button"> -->
-            <button input type="submit" class="submit-button" value="Submit">Submit</button>
+                                                                                             <!-- TODO RESET BUTTON -->
+            <button input type="submit" class="submit-button" value="Submit">Submit</button> <!-- TODO LEERE ABFRAGE VERHINDERN -->
           </form>
         </div>
       </div>
