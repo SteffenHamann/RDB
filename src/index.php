@@ -25,6 +25,11 @@
   <link href="main.css" rel="stylesheet">
 
 
+<!-- TODO LIST
+  1. Help
+  2. Author
+-->
+
 </head>
 
 <body>
@@ -63,22 +68,22 @@
             <button type="button" data-id="u1" class="dropdown-header">Einwohner</button>
             <ul class="dropdown-item" id="u1">
               <li>
-                <p>Einwohneranzahl:<span style="padding-left: 10px;"><input type="text" Placeholder="in. Mio" size="2" class="right" name="population"></span></p>
+                <p>Einwohneranzahl:<span style="padding-left: 10px;"><input type="text" Placeholder="in. Mio" size="2" class="right" name="population" id="population"></span></p>
               </li>
               <li>
                 <p style="font-size: 25px;">Anteil Ethnien...</p>
               </li>
               <li>
-                <p>Weiß<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percWhite"></span></p>
+                <p>Weiß<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percWhite" id="percWhite"></span></p>
               </li>
               <li>
-                <p>Schwarz<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percBlack"></span></p>
+                <p>Schwarz<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percBlack" id="percBlack"></span></p>
               </li>
               <li>
-                <p>Latein<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percLatin"></span></p>
+                <p>Latein<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percLatin" id="percLatin"></span></p>
               </li>
               <li>
-                <p>Asien<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percAsian"></span></p>
+                <p>Asien<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percAsian" id="percAsian"></span></p>
               </li>
             </ul>
 
@@ -88,19 +93,39 @@
               <li>
                 <p style="font-size: 25px;">Stärkste Wirtschaft</p>
               </li>
-              <li><select style="margin-bottom: 10px;" class="" name="economy"> <!-- TODO Placeholder -->
+              <li><select style="margin-bottom: 10px;" class="" name="economy" id="economy">
                       <option value="" disabled selected>Wirtschaft wählen</option>
                       <option value="12">Warrenherrstellung</option>
                       <option value="82">Regierung</option>
                       <option value="56">Immobilien</option>
                       <option value="13">Langlebige Warrenherrstellung</option>
+                      <option value="70">Gesundheitswesen</option>
+                      <option value="35">Einzelhandel</option>
+                      <option value="25">Nicht langlebige Warrenherstellung</option>
+                      <option value="60">Technische Dienstleistungen</option>
+                      <option value="34">Großhandel</option>
+                      <option value="51">Finanzwesen</option>
+                      <option value="11">Bauwesen</option>
+                      <option value="78">Gastronomie und Hotegewerbe</option>
+                      <option value="65">Müllabfuhr</option>
+                      <option value="10">Dienstleistungen</option>
+                      <option value="36">Transportwesen</option>
+                      <option value="81">Nicht staatlich</option>
+                      <option value="45">Presse</option>
+                      <option value="6">Bergbau</option>
+                      <option value="3">Landwirtschaft</option>
+                      <option value="64">Controlling</option>
+                      <option value="69">Bildunswesen</option>
+                      <option value="75">Entertaiment</option>
+
+
                     </select>
               </li>
               <li>
-                <p>Pro Kopf einkommen<span style="padding-left: 10px;"><input type="text" Placeholder=" in K" size="2"  class="right" name="perHeadIncome"></span></p>
+                <p>Pro Kopf einkommen<span style="padding-left: 10px;"><input type="text" Placeholder=" in K" size="2"  class="right" name="perHeadIncome" id="perHeadIncome"></span></p>
               </li>
               <li>
-                <p>Arbeitslosenrate<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="joblessRate"></span></p>
+                <p>Arbeitslosenrate<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="joblessRate" id="joblessRate"></span></p>
               </li>
 
             </ul>
@@ -110,16 +135,16 @@
             <ul class="dropdown-item" id="u3">
               <div data-toggle="buttons">
                 <label class ="btn btn-default" style="float:left;">
-                  <input type="radio" class="btn btn-default" name="politic" value="2"> Trump
+                  <input type="radio" class="btn btn-default" name="politic" id="politic" value="2"> Trump
                 </label>
                 <label class ="btn btn-default" style="margin-bottom:10px; margin-right: 20%; float:right;">
-                  <input type="radio" class="btn btn-default" name="politic" value="1"> Hillary
+                  <input type="radio" class="btn btn-default" name="politic" id="politic" value="1"> Hillary
                 </label>
               </div>
             </ul>
-                                                                                             <!-- TODO RESET BUTTON -->
-            <button input type="submit" class="submit-button" value="Submit">Submit</button> <!-- TODO LEERE ABFRAGE VERHINDERN -->
+            <button input type="submit" id="submit-button" class="submit-button" value="Submit">Submit</button> <!-- TODO LEERE ABFRAGE VERHINDERN und SQL BEI LEERE WIRTSCHAFT GIBT DOPPEL AUSGABE -->
           </form>
+          <button type="button" onclick="test()" class="clear-button">Reset</button> <!-- TODO BUTTON CHECKED POLTIK-->
         </div>
       </div>
     </div>

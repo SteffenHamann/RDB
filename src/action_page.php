@@ -1,25 +1,6 @@
 
 <?php
 
-    /*echo $_POST["population"];
-    echo ("<br />");
-    echo $_POST["percWhite"];
-    echo ("<br />");
-    echo $_POST["percBlack"];
-    echo ("<br />");
-    echo $_POST["percLatin"];
-    echo ("<br />");
-    echo $_POST["percAsian"];
-    echo ("<br />");
-    echo $_POST["economy"];
-    echo ("<br />");
-    echo $_POST["perHeadIncome"];
-    echo ("<br />");
-    echo $_POST["joblessRate"];
-    echo ("<br />");
-    echo $_POST["politic"];*/
-
-
 
 //----------------Verbindung zur DB----------------    
 
@@ -30,6 +11,7 @@ $dbname = "america";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
+
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
@@ -37,8 +19,40 @@ if (!$conn) {
 
 //--------------------------------------------------
 
+
+
 //-----------------Form Handler---------------------
-$sql = "SELECT staaten.staat_id, staat_name, hauptstadt FROM staaten, economydata WHERE staaten.staat_id = economydata.staat_id AND ";
+
+$sql = "
+SELECT 
+      staaten.staat_id
+    , staat_name
+    , economydata.INDUSTRY_ID
+    , economydata.INDUSTRIE_UMSATZ_ANTEIL 
+    , staaten.hauptstadt
+  FROM staaten
+  INNER JOIN  economydata on staaten.staat_id = economydata.staat_id
+  where (staaten.staat_id, economydata.INDUSTRIE_UMSATZ_ANTEIL ) in (
+        SELECT 
+        staaten.staat_id
+      , max(economydata.INDUSTRIE_UMSATZ_ANTEIL) 
+    FROM staaten
+    INNER JOIN  economydata on staaten.staat_id = economydata.staat_id
+    group by  staaten.staat_id
+
+  ) AND ";
+
+
+$sql2 = "
+SELECT 
+      staaten.staat_id
+    , staat_name
+    , staaten.hauptstadt
+    , flagge
+  FROM staaten 
+  WHERE ";
+
+  
 
 if($_POST["population"] != ""){
     $sql = $sql . "EINWOHNER >= " . $_POST["population"] . "000000" . " AND ";
@@ -69,7 +83,7 @@ if($_POST["perHeadIncome"] != ""){
 }
 
 if($_POST["joblessRate"] != ""){
-    $sql = $sql . "ARBEITSLOSENRATE >= " . $_POST["joblessRate"]   . " AND ";
+    $sql = $sql . "ARBEITSLOSENRATE <= " . $_POST["joblessRate"]   . " AND ";
 }
 
 if($_POST["politic"] != ""){
@@ -77,21 +91,29 @@ if($_POST["politic"] != ""){
 }
 
 
-echo substr($sql, 0, -5);
+//echo substr($sql, 0, -5); //ONLY FOR TEST
 
 
 //-------------------SQL Abfrage--------------------
 
-$result = mysqli_query($conn, substr($sql, 0, -5));
+if($_POST["economy"] != ""){
+    $result = mysqli_query($conn, substr($sql, 0, -5));
+}
+else{
+    $result = mysqli_query($conn, substr($sql2, 0, -5));   
+}
 
 //--------------------------------------------------
+
+
 
 //------------------Ausgabe SQL---------------------
 
 if (mysqli_num_rows($result) > 0) {
     // output data of each row
     while($row = mysqli_fetch_assoc($result)) {
-        echo "id: " . $row["staat_id"]. " - Name: " . $row["staat_name"]. " Hauptstadt: " . $row["hauptstadt"]. "<br>";
+        echo "id: " . $row["staat_id"] . " - Name: " . $row["staat_name"] . " Hauptstadt: " . $row["hauptstadt"] . "<br>";
+        //echo "id: " . $row["staat_id"] . " - Name: " . $row["staat_name"] . " Hauptstadt: " . $row["hauptstadt"] . " Flagge: <img src=" .$row['flagge']. ">  <br>";// ---- MIT FLAGGE
     }
 } else {
     echo "0 results";
@@ -100,6 +122,6 @@ if (mysqli_num_rows($result) > 0) {
 //--------------------------------------------------
 
 
-mysqli_close($conn); //close connection do DB
+mysqli_close($conn); //close connection to DB
 
 ?>
