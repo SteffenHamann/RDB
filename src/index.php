@@ -149,7 +149,6 @@
       </div>
     </div>
 
-
     <!-- HIER BEGINNT DIE CONTENT COMPONENT -->
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 container">
       <h1 class="page-header">Make America Great again</h1>
@@ -161,6 +160,8 @@
         </div>
       </div>
     </div>
+
+
 
   </div>
   </div>

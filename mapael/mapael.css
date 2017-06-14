@@ -2,9 +2,9 @@
             position: relative;
 }
 
-.mapael .mapTooltip {
+        .mapael .mapTooltip {
             position: absolute;
-            background-color: #fff;
+            background-color: #474c4b;
             moz-opacity: 0.70;
             opacity: 0.70;
             filter: alpha(opacity=70);
@@ -13,5 +13,5 @@
             z-index: 1000;
             max-width: 200px;
             display: none;
-            color: #343434;
+            color: #fff;
         }

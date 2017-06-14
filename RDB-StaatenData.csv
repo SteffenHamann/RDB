@@ -1,51 +1,51 @@
-STAAT_ID;STAAT_NAME;HAUPTSTADT;FLAECHE;EINWOHNER;BEVOELK_DICHTE;FLAGGE;INDUSTRIE_UMSATZ_INSG;PRO_KOPF_EINKOMMEN;ARBEITSLOSENRATE;ANTEIL_WEISSE;ANTEIL_HISPANIC_LATINOS;ANTEIL_SCHWARZ;ANTEIL_ASIATISCH;MIXED_RACES;STAERKSTE_PARTEI_ID;DEMOCRATS_VOTES_NUMBERS;DEMOCRATS_VOTES_PERCENT;REPUBLICAN_VOTES_NUMBERS;REPUBLICAN_VOTES_PERCENT
-1;Alabama;Montgomery;135767;4779736;35;Assets/Flag_of_Alabama.svg.png;206360;39662;5.8;65;4;27;0;2;2;729547;34.36;1318255;62.08
-2;Alaska;Juneau;1723337;710231;0.41;Assets/Flag_of_Alaska.svg.png;51541;55700;6.4;58;6;3;7;7;2;116454;36.55;163387;51.28
-3;Arizona;Phoenix;295234;6392017;22;Assets/Flag_of_Arizona.svg.png;303007;40752;5;51;37;4;3;2;2;1161167;45.46;1252401;49.03
-4;Arkansas;Little Rock;137732;2915918;21;Assets/Flag_of_Arkansas.svg.png;123100;39725;3.6;74;7;15;2;2;2;380494;33.65;684782;60.57
-5;Californien;Sacramento;423967;37253956;88;Assets/Flag_of_California.svg.png;2589628;56994;4.9;39;38;6;15;2;1;8696374;62.28;4452094;31.88
-6;Colorado;Denver;269601;5029196;19;Assets/Flag_of_Colorado.svg.png;325447;52727;2.6;69;21;4;3;2;1;1338870;48.16;1202484;43.25
-7;Connecticut;Hartford;14357;3574097;249;Assets/Flag_of_Connectic.svg.png;261041;72006;4.8;70;15;9;4;0;1;897572;54.57;673215;40.93
-8;Delaware;Dover;6446;897934;139;Assets/Flag_of_Delaware.svg.png;71882;49381;4.5;63;10;21;4;0;1;235603;53.36;185127;41.92
-9;Florida;Tallahassee;170312;18801310;110;Assets/Flag_of_Florida.svg.png;933806;46385;4.8;54;26;16;2;1;2;4504975;47.82;4617886;49.02
-10;Georgia;Atlanta;153910;9687653;63;Assets/Flag_of_Georgia.svg.png;528111;42294;5.1;52;10;31;5;2;2;1877963;45.89;2089104;51.05
-11;Hawaii;Honolulu;28313;1360301;48;Assets/Flag_of_Hawaii.svg.png;84065;51248;2.7;19;10;2;39;16;1;266891;61;128847;29.4
-12;Idaho;Boise;216643;1567582;7;Assets/Flag_of_Idaho.svg.png;68158;39433;3.5;84;13;1;1;1;2;189765;27.5;409055;59.2
-13;Illinois;Springfield;149995;12830632;86;Assets/Flag_of_Illinois.svg.png;805876;52696;4.9;63;16;13;6;1;1;3090729;55.8;2146015;38.8
-14;Indiana;Indianapolis;94326;6483802;69;Assets/Flag_of_Indiana.svg.png;348046;44091;3.9;80;8;9;2;1;2;1039126;37.91;1557286;56.82
-15;Iowa;Des Moines;145746;3046355;21;Assets/Flag_of_Iowa.svg.png;174980;47114;3.1;85;8;3;2;1;2;653669;41.74;800983;51.15
-16;Kansas;Topeka;213100;2853118;13;Assets/Flag_of_Kansas.svg.png;153498;49058;3.8;75;12;5;3;4;2;427005;36.05;671018;56.65
-17;Kentucky;Frankfort;104656;4339367;41;Assets/Flag_of_Kentucky.svg.png;196700;39962;5;85;3;7;0;2;2;628854;32.68;1202971;62.52
-18;Louisiana;Baton Rouge;135659;4533372;33;Assets/Flag_of_Louisiana.svg.png;239267;44059;5.7;58;5;32;2;2;2;780154;38.45;1178638;58.09
-19;Maine;Augusta;91633;1328361;14;Assets/Flag_of_Maine.svg.png;59925;44795;3;91;2;0;2;3;1;352156;47.84;332418;45.16
-20;Maryland;Annapolis;32131;5773552;180;Assets/Flag_of_Maryland.svg.png;376010;58876;4.3;50;11;30;6;3;1;1677926;60.32;943169;33.91
-21;Massachusetts;Boston;27336;6547629;240;Assets/Flag_of_Massachusetts.svg.png;505121;66216;3.6;73;11;7;7;1;1;1995196;60.93;1090893;33.31
-22;Michigan;Lansing;250487;9883640;39;Assets/Flag_of_Michigan.svg.png;488864;44994;5.1;76;5;14;3;2;2;2268839;47.27;2279543;47.5
-23;Minnesota;Saint Paul;225163;5303925;24;Assets/Flag_of_Minnesota.svg.png;330142;52876;3.8;82;5;6;3;1;1;1367716;46.44;1322951;44.92
-24;Mississippi;Jackson;125438;2967297;24;Assets/Flag_of_Mississippi.svg.png;110100;36266;5;56;3;38;0;1;2;462127;39.74;678284;58.32
-25;Missouri;Jefferson City;180540;5988927;33;Assets/Flag_of_Missouri.svg.png;306883;44241;3.9;80;4;11;2;2;2;1054889;37.84;1585753;56.88
-26;Montana;Helena;380831;989415;3;Assets/Flag_of_Montana.svg.png;46301;42768;3.8;90;3;1;1;0;2;177709;35.93;279.24;56.47
-27;Nebraska;Lincoln;200330;1826341;9;Assets/Flag_of_Nebraska.svg.png;116146;49832;3.1;79;11;5;2;0;2;283322;34.32;494881;59.94
-28;Nevada;Carson City;286380;2700551;9;Assets/Flag_of_Nevada.svg.png;146755;44179;4.8;50;28;9;8;3;1;539.26;47.92;512058;45.5
-29;New Hampshire;Concord;24214;1316470;54;Assets/Flag_of_New_Hampshire.svg.png;78017;59397;2.8;91;3;1;3;2;1;348526;46.98;345.79;46.61
-30;New Jersey;Trenton;22591;8791894;389;Assets/Flag_of_New_Jersey.svg.png;591600;62861;4.2;56;18;13;11;1;1;1967444;54.77;1509688;42.03
-31;New Mexico;Santa Fe;314917;2059179;7;Assets/Flag_of_New_Mexico.svg.png;92867;39245;6.7;38;44;2;1;0;1;385234;48.26;319666;40.04
-32;New York;Albany;141297;19378102;137;Assets/Flag_of_New_York.svg.png;1494116;61210;4.3;58;18;14;8;1;1;4145376;57.89;2638135;36.84
-33;North Carolina;Raleigh;139391;9535483;68;Assets/Flag_of_North_Carolina.svg.png;518611;42454;4.9;62;11;21;2;2;2;2189350;46.17;2362697;49.83
-34;North Dakota;Bismarck;183108;672591;4;Assets/Flag_of_North_Dakota.svg.png;51507;55471;2.8;85;3;3;2;3;2;93758;27.23;216794;62.96
-35;Ohio;Columbus;116098;11536504;99;Assets/Flag_of_Ohio.svg.png;630030;45485;5.1;79;4;12;2;3;2;2320596;43.51;2776683;52.06
-36;Oklahoma;Oklahoma City;181037;3751351;21;Assets/Flag_of_Oklahoma.svg.png;181381;45909;4.3;65;12;7;2;5;2;420375;28.93;949136;65.32
-37;Oregon;Salem;254799;3831074;15;Assets/Flag_of_Oregon.svg.png;231508;45436;3.8;74;15;2;4;4;1;991.58;50.1;774.08;39.11
-38;Pennsylvania;Harrisburg;119280;12702379;106;Assets/Flag_of_Pennsylvania.svg.png;723753;52242;4.8;76;8;10;4;2;2;2926025;47.86;2970146;48.58
-39;RhodeIsland;Providence;4001;1052567;263;Assets/Flag_of_Rhode_Island.svg.png;57815;52267;4.3;72;15;7;4;0;1;227062;53.83;166454;39.46
-40;SouthCarolina;Columbia;82933;4625364;56;Assets/Flag_of_South_Carolina.svg.png;211298;39879;4.4;64;5;27;2;1;2;855373;40.67;1155389;54.94
-41;SouthDakota;Pierre;199729;814180;4;Assets/Flag_of_South_Dakota.svg.png;47722;48461;2.8;83;4;2;0;2;2;117442;31.74;227701;61.53
-42;Tennessee;Nashville;109153;6346105;58;Assets/Flag_of_Tennessee.svg.png;330072;43876;5.1;73;6;17;2;2;2;868853;34.9;1519926;61.06
-43;Texas;Austin;695662;25145561;36;Assets/Flag_of_Texas.svg.png;1654064;48035;5;44;37;12;5;1;2;3877868;43.24;4685047;52.23
-44;Utah;Salt Lake City;219882;2763885;13;Assets/Flag_of_Utah.svg.png;156791;41320;3.1;81;13;1;2;0;2;310674;27.46;515211;45.54
-45;Vermont;Montpelier;24906;625741;25;Assets/Flag_of_Vermont.svg.png;31370;51011;3;94;1;1;1;2;1;178573;55.72;95369;29.76
-46;Virginia;Richmond;110787;8001024;72;Assets/Flag_of_Virginia.svg.png;496062;54420;3.8;62;10;19;6;2;1;1981473;49.75;1769443;44.43
-47;Washington;Olympia;184661;6724540;36;Assets/Flag_of_Washington.svg.png;474732;54076;4.7;69;13;3;8;4;1;1742718;54.3;1221747;38.07
-48;West Virginia;Charleston;62756;1852994;30;Assets/Flag_of_West_Virginia.svg.png;73473;37869;4.9;93;1;3;0;2;2;188794;26.48;489371;68.63
-49;Wisconsin;Madison;169635;5686986;34;Assets/Flag_of_Wisconsin.svg.png;312110;47910;3.4;78;10;6;3;2;2;1381823;46.44;1404000;47.19
-50;Wyoming;Cheyenne;253335;563626;2;Assets/Flag_of_Wyoming.svg.png;37641;55265;4.5;85;9;1;1;2;2;55973;21.9;174419;68.2
+STAAT_ID;STAAT_NAME;STAAT_KENNUNG;STAAT_DETAIL;HAUPTSTADT;FLAECHE;EINWOHNER;BEVOELK_DICHTE;FLAGGE;INDUSTRIE_UMSATZ_INSG;PRO_KOPF_EINKOMMEN;ARBEITSLOSENRATE;ANTEIL_WEISSE;ANTEIL_HISPANIC_LATINOS;ANTEIL_SCHWARZ;ANTEIL_ASIATISCH;MIXED_RACES;STAERKSTE_PARTEI_ID;DEMOCRATS_VOTES_NUMBERS;DEMOCRATS_VOTES_PERCENT;REPUBLICAN_VOTES_NUMBERS;REPUBLICAN_VOTES_PERCENT
+1;Alabama;AL;Detailpage/al.php;Montgomery;135767;4779736;35;Assets/Flag_of_Alabama.svg.png;206360;39662;5.8;65;4;27;0;2;2;729547;34.36;1318255;62.08
+2;Alaska;AK;Detailpage/ak.php;Juneau;1723337;710231;0.41;Assets/Flag_of_Alaska.svg.png;51541;55700;6.4;58;6;3;7;7;2;116454;36.55;163387;51.28
+3;Arizona;AZ;Detailpage/az.php;Phoenix;295234;6392017;22;Assets/Flag_of_Arizona.svg.png;303007;40752;5;51;37;4;3;2;2;1161167;45.46;1252401;49.03
+4;Arkansas;AR;Detailpage/ar.php;Little Rock;137732;2915918;21;Assets/Flag_of_Arkansas.svg.png;123100;39725;3.6;74;7;15;2;2;2;380494;33.65;684782;60.57
+5;Californien;CA;Detailpage/ca.php;Sacramento;423967;37253956;88;Assets/Flag_of_California.svg.png;2589628;56994;4.9;39;38;6;15;2;1;8696374;62.28;4452094;31.88
+6;Colorado;CO;Detailpage/co.php;Denver;269601;5029196;19;Assets/Flag_of_Colorado.svg.png;325447;52727;2.6;69;21;4;3;2;1;1338870;48.16;1202484;43.25
+7;Connecticut;CT;Detailpage/ct.php;Hartford;14357;3574097;249;Assets/Flag_of_Connectic.svg.png;261041;72006;4.8;70;15;9;4;0;1;897572;54.57;673215;40.93
+8;Delaware;DE;Detailpage/de.php;Dover;6446;897934;139;Assets/Flag_of_Delaware.svg.png;71882;49381;4.5;63;10;21;4;0;1;235603;53.36;185127;41.92
+9;Florida;FL;Detailpage/fl.php;Tallahassee;170312;18801310;110;Assets/Flag_of_Florida.svg.png;933806;46385;4.8;54;26;16;2;1;2;4504975;47.82;4617886;49.02
+10;Georgia;GA;Detailpage/ga.php;Atlanta;153910;9687653;63;Assets/Flag_of_Georgia.svg.png;528111;42294;5.1;52;10;31;5;2;2;1877963;45.89;2089104;51.05
+11;Hawaii;HI;Detailpage/hi.php;Honolulu;28313;1360301;48;Assets/Flag_of_Hawaii.svg.png;84065;51248;2.7;19;10;2;39;16;1;266891;61;128847;29.4
+12;Idaho;ID;Detailpage/id.php;Boise;216643;1567582;7;Assets/Flag_of_Idaho.svg.png;68158;39433;3.5;84;13;1;1;1;2;189765;27.5;409055;59.2
+13;Illinois;IL;Detailpage/il.php;Springfield;149995;12830632;86;Assets/Flag_of_Illinois.svg.png;805876;52696;4.9;63;16;13;6;1;1;3090729;55.8;2146015;38.8
+14;Indiana;IN;Detailpage/in.php;Indianapolis;94326;6483802;69;Assets/Flag_of_Indiana.svg.png;348046;44091;3.9;80;8;9;2;1;2;1039126;37.91;1557286;56.82
+15;Iowa;IA;Detailpage/ia.php;Des Moines;145746;3046355;21;Assets/Flag_of_Iowa.svg.png;174980;47114;3.1;85;8;3;2;1;2;653669;41.74;800983;51.15
+16;Kansas;KS;Detailpage/ks.php;Topeka;213100;2853118;13;Assets/Flag_of_Kansas.svg.png;153498;49058;3.8;75;12;5;3;4;2;427005;36.05;671018;56.65
+17;Kentucky;KY;Detailpage/ky.php;Frankfort;104656;4339367;41;Assets/Flag_of_Kentucky.svg.png;196700;39962;5;85;3;7;0;2;2;628854;32.68;1202971;62.52
+18;Louisiana;LA;Detailpage/la.php;Baton Rouge;135659;4533372;33;Assets/Flag_of_Louisiana.svg.png;239267;44059;5.7;58;5;32;2;2;2;780154;38.45;1178638;58.09
+19;Maine;ME;Detailpage/me.php;Augusta;91633;1328361;14;Assets/Flag_of_Maine.svg.png;59925;44795;3;91;2;0;2;3;1;352156;47.84;332418;45.16
+20;Maryland;MD;Detailpage/md.php;Annapolis;32131;5773552;180;Assets/Flag_of_Maryland.svg.png;376010;58876;4.3;50;11;30;6;3;1;1677926;60.32;943169;33.91
+21;Massachusetts;MA;Detailpage/ma.php;Boston;27336;6547629;240;Assets/Flag_of_Massachusetts.svg.png;505121;66216;3.6;73;11;7;7;1;1;1995196;60.93;1090893;33.31
+22;Michigan;MI;Detailpage/mi.php;Lansing;250487;9883640;39;Assets/Flag_of_Michigan.svg.png;488864;44994;5.1;76;5;14;3;2;2;2268839;47.27;2279543;47.5
+23;Minnesota;MN;Detailpage/mn.php;Saint Paul;225163;5303925;24;Assets/Flag_of_Minnesota.svg.png;330142;52876;3.8;82;5;6;3;1;1;1367716;46.44;1322951;44.92
+24;Mississippi;MS;Detailpage/ms.php;Jackson;125438;2967297;24;Assets/Flag_of_Mississippi.svg.png;110100;36266;5;56;3;38;0;1;2;462127;39.74;678284;58.32
+25;Missouri;MO;Detailpage/mo.php;Jefferson City;180540;5988927;33;Assets/Flag_of_Missouri.svg.png;306883;44241;3.9;80;4;11;2;2;2;1054889;37.84;1585753;56.88
+26;Montana;MT;Detailpage/mt.php;Helena;380831;989415;3;Assets/Flag_of_Montana.svg.png;46301;42768;3.8;90;3;1;1;0;2;177709;35.93;279.24;56.47
+27;Nebraska;NE;Detailpage/ne.php;Lincoln;200330;1826341;9;Assets/Flag_of_Nebraska.svg.png;116146;49832;3.1;79;11;5;2;0;2;283322;34.32;494881;59.94
+28;Nevada;NV;Detailpage/nv.php;Carson City;286380;2700551;9;Assets/Flag_of_Nevada.svg.png;146755;44179;4.8;50;28;9;8;3;1;539.26;47.92;512058;45.5
+29;New Hampshire;NH;Detailpage/nh.php;Concord;24214;1316470;54;Assets/Flag_of_New_Hampshire.svg.png;78017;59397;2.8;91;3;1;3;2;1;348526;46.98;345.79;46.61
+30;New Jersey;NJ;Detailpage/nj.php;Trenton;22591;8791894;389;Assets/Flag_of_New_Jersey.svg.png;591600;62861;4.2;56;18;13;11;1;1;1967444;54.77;1509688;42.03
+31;New Mexico;NM;Detailpage/nm.php;Santa Fe;314917;2059179;7;Assets/Flag_of_New_Mexico.svg.png;92867;39245;6.7;38;44;2;1;0;1;385234;48.26;319666;40.04
+32;New York;NY;Detailpage/ny.php;Albany;141297;19378102;137;Assets/Flag_of_New_York.svg.png;1494116;61210;4.3;58;18;14;8;1;1;4145376;57.89;2638135;36.84
+33;North Carolina;NC;Detailpage/nc.php;Raleigh;139391;9535483;68;Assets/Flag_of_North_Carolina.svg.png;518611;42454;4.9;62;11;21;2;2;2;2189350;46.17;2362697;49.83
+34;North Dakota;ND;Detailpage/nd.php;Bismarck;183108;672591;4;Assets/Flag_of_North_Dakota.svg.png;51507;55471;2.8;85;3;3;2;3;2;93758;27.23;216794;62.96
+35;Ohio;OH;Detailpage/oh.php;Columbus;116098;11536504;99;Assets/Flag_of_Ohio.svg.png;630030;45485;5.1;79;4;12;2;3;2;2320596;43.51;2776683;52.06
+36;Oklahoma;OK;Detailpage/ok.php;Oklahoma City;181037;3751351;21;Assets/Flag_of_Oklahoma.svg.png;181381;45909;4.3;65;12;7;2;5;2;420375;28.93;949136;65.32
+37;Oregon;OR;Detailpage/or.php;Salem;254799;3831074;15;Assets/Flag_of_Oregon.svg.png;231508;45436;3.8;74;15;2;4;4;1;991.58;50.1;774.08;39.11
+38;Pennsylvania;PA;Detailpage/pa.php;Harrisburg;119280;12702379;106;Assets/Flag_of_Pennsylvania.svg.png;723753;52242;4.8;76;8;10;4;2;2;2926025;47.86;2970146;48.58
+39;RhodeIsland;RI;Detailpage/ri.php;Providence;4001;1052567;263;Assets/Flag_of_Rhode_Island.svg.png;57815;52267;4.3;72;15;7;4;0;1;227062;53.83;166454;39.46
+40;South Carolina;SC;Detailpage/sc.php;Columbia;82933;4625364;56;Assets/Flag_of_South_Carolina.svg.png;211298;39879;4.4;64;5;27;2;1;2;855373;40.67;1155389;54.94
+41;South Dakota;SD;Detailpage/sd.php;Pierre;199729;814180;4;Assets/Flag_of_South_Dakota.svg.png;47722;48461;2.8;83;4;2;0;2;2;117442;31.74;227701;61.53
+42;Tennessee;TN;Detailpage/tn.php;Nashville;109153;6346105;58;Assets/Flag_of_Tennessee.svg.png;330072;43876;5.1;73;6;17;2;2;2;868853;34.9;1519926;61.06
+43;Texas;TX;Detailpage/tx.php;Austin;695662;25145561;36;Assets/Flag_of_Texas.svg.png;1654064;48035;5;44;37;12;5;1;2;3877868;43.24;4685047;52.23
+44;Utah;UT;Detailpage/ut.php;Salt Lake City;219882;2763885;13;Assets/Flag_of_Utah.svg.png;156791;41320;3.1;81;13;1;2;0;2;310674;27.46;515211;45.54
+45;Vermont;VT;Detailpage/vt.php;Montpelier;24906;625741;25;Assets/Flag_of_Vermont.svg.png;31370;51011;3;94;1;1;1;2;1;178573;55.72;95369;29.76
+46;Virginia;VA;Detailpage/va.php;Richmond;110787;8001024;72;Assets/Flag_of_Virginia.svg.png;496062;54420;3.8;62;10;19;6;2;1;1981473;49.75;1769443;44.43
+47;Washington;WA;Detailpage/wa.php;Olympia;184661;6724540;36;Assets/Flag_of_Washington.svg.png;474732;54076;4.7;69;13;3;8;4;1;1742718;54.3;1221747;38.07
+48;West Virginia;WV;Detailpage/wv.php;Charleston;62756;1852994;30;Assets/Flag_of_West_Virginia.svg.png;73473;37869;4.9;93;1;3;0;2;2;188794;26.48;489371;68.63
+49;Wisconsin;WI;Detailpage/wi.php;Madison;169635;5686986;34;Assets/Flag_of_Wisconsin.svg.png;312110;47910;3.4;78;10;6;3;2;2;1381823;46.44;1404000;47.19
+50;Wyoming;WY;Detailpage/wy.php;Cheyenne;253335;563626;2;Assets/Flag_of_Wyoming.svg.png;37641;55265;4.5;85;9;1;1;2;2;55973;21.9;174419;68.2
