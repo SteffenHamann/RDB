@@ -142,7 +142,7 @@
                 </label>
               </div>
             </ul>
-            <button input type="submit" id="submit-button" class="submit-button" value="Submit" disabled>Submit</button> <!-- TODO LEERE ABFRAGE VERHINDERN-->
+            <button input type="submit" id="submit-button" class="submit-button" value="Submit" disabled>Submit</button>
           </form>
           <button type="button" onclick="test()" class="clear-button">Reset</button>
         </div>
