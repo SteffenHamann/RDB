@@ -25,7 +25,6 @@ $(document).ready(function(){
     $('input[type="radio"]').on('change', function () {
       // Here we set the button to not disabled if the radio was selected
       $('#submit-button').prop('disabled', !$(this).prop('checked'));
-      $('#submit-button').prop('disabled', $(this).prop('checked'));
     });
 
 });
