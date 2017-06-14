@@ -142,9 +142,9 @@
                 </label>
               </div>
             </ul>
-            <button input type="submit" id="submit-button" class="submit-button" value="Submit">Submit</button> <!-- TODO LEERE ABFRAGE VERHINDERN und SQL BEI LEERE WIRTSCHAFT GIBT DOPPEL AUSGABE -->
+            <button input type="submit" id="submit-button" class="submit-button" value="Submit" disabled>Submit</button> <!-- TODO LEERE ABFRAGE VERHINDERN-->
           </form>
-          <button type="button" onclick="test()" class="clear-button">Reset</button> <!-- TODO BUTTON CHECKED POLTIK-->
+          <button type="button" onclick="test()" class="clear-button">Reset</button>
         </div>
       </div>
     </div>

@@ -56,22 +56,27 @@ SELECT
 
 if($_POST["population"] != ""){
     $sql = $sql . "EINWOHNER >= " . $_POST["population"] . "000000" . " AND ";
+    $sql2 = $sql2 . "EINWOHNER >= " . $_POST["population"] . "000000" . " AND ";
 }
 
 if($_POST["percWhite"] != ""){
     $sql = $sql . "ANTEIL_WEISSE >= " . $_POST["percWhite"]  . " AND ";
+    $sql2 = $sql2 . "ANTEIL_WEISSE >= " . $_POST["percWhite"]  . " AND ";
 }
 
 if($_POST["percBlack"] != ""){
     $sql = $sql . "ANTEIL_SCHWARZ >= " . $_POST["percBlack"]  . " AND ";
+    $sql2 = $sql2 . "ANTEIL_SCHWARZ >= " . $_POST["percBlack"]  . " AND ";
 }
 
 if($_POST["percLatin"] != ""){
     $sql = $sql . "ANTEIL_HISPANIC_LATINOS >= " . $_POST["percLatin"]  . " AND ";
+    $sql2 = $sql2 . "ANTEIL_HISPANIC_LATINOS >= " . $_POST["percLatin"]  . " AND ";
 }
 
 if($_POST["percAsian"] != ""){
     $sql = $sql . "ANTEIL_ASIATISCH >= " . $_POST["percAsian"]  . " AND ";
+    $sql2 = $sql2 . "ANTEIL_ASIATISCH >= " . $_POST["percAsian"]  . " AND ";
 }
 
 if($_POST["economy"] != ""){
@@ -80,18 +85,21 @@ if($_POST["economy"] != ""){
 
 if($_POST["perHeadIncome"] != ""){
     $sql = $sql . "PRO_KOPF_EINKOMMEN >= " . $_POST["perHeadIncome"] . "000"   . " AND ";
+    $sql2 = $sql2 . "PRO_KOPF_EINKOMMEN >= " . $_POST["perHeadIncome"] . "000"   . " AND ";
 }
 
 if($_POST["joblessRate"] != ""){
     $sql = $sql . "ARBEITSLOSENRATE <= " . $_POST["joblessRate"]   . " AND ";
+    $sql2 = $sql2 . "ARBEITSLOSENRATE <= " . $_POST["joblessRate"]   . " AND ";
 }
 
 if($_POST["politic"] != ""){
     $sql = $sql . "STAERKSTE_PARTEI_ID = " . $_POST["politic"]  . " AND ";
+    $sql2 = $sql2 . "STAERKSTE_PARTEI_ID = " . $_POST["politic"]  . " AND ";
 }
 
 
-//echo substr($sql, 0, -5); //ONLY FOR TEST
+echo substr($sql2, 0, -5); //ONLY FOR TEST
 
 
 //-------------------SQL Abfrage--------------------
