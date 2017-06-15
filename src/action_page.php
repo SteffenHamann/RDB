@@ -107,7 +107,7 @@
                       <option value="34">Großhandel</option>
                       <option value="51">Finanzwesen</option>
                       <option value="11">Bauwesen</option>
-                      <option value="78">Gastronomie und Hotegewerbe</option>
+                      <option value="78">Gastronomie und Hotelgewerbe</option>
                       <option value="65">Müllabfuhr</option>
                       <option value="10">Dienstleistungen</option>
                       <option value="36">Transportwesen</option>
@@ -136,10 +136,10 @@
             <ul class="dropdown-item" id="u3">
               <div data-toggle="buttons">
                 <label class ="btn btn-default" style="float:left;">
-                  <input type="radio" class="btn btn-default" name="politic" id="politic" value="2"> Trump
+                  <input type="radio" class="btn btn-default" id="politicTrump" name="politic" value="2"> Trump
                 </label>
                 <label class ="btn btn-default" style="margin-bottom:10px; margin-right: 20%; float:right;">
-                  <input type="radio" class="btn btn-default" name="politic" id="politic" value="1"> Hillary
+                  <input type="radio" class="btn btn-default" id="politicHilary" name="politic" value="1"> Hillary
                 </label>
               </div>
             </ul>
@@ -286,18 +286,19 @@ if($_POST["perHeadIncome"] != ""){
 }
 
 if($_POST["joblessRate"] != ""){
-    $sql = $sql . "ARBEITSLOSENRATE <= " . $_POST["joblessRate"]   . " AND ";
-    $sql2 = $sql2 . "ARBEITSLOSENRATE <= " . $_POST["joblessRate"]   . " AND ";
+    $sql = $sql . "ARBEITSLOSENRATE >= " . $_POST["joblessRate"]   . " AND ";
+    $sql2 = $sql2 . "ARBEITSLOSENRATE >= " . $_POST["joblessRate"]   . " AND ";
 }
 
 if($_POST["politic"] != ""){
     $sql = $sql . "STAERKSTE_PARTEI_ID = " . $_POST["politic"]  . " AND ";
     $sql2 = $sql2 . "STAERKSTE_PARTEI_ID = " . $_POST["politic"]  . " AND ";
-    if (["politic"] == "1"){
-      echo '<script>document.filter.politic[0].checked=true;</script>';
+    echo ["politic"] == "1";
+    if ($_POST["politic"]  == "1"){
+      echo '<script type="text/javascript"> $("#politicHilary").prop("checked", true);$("#politicHilary").parent().addClass("active");</script>';
     }
-    if (["politic"] == "2"){
-      echo '<script>document.filter.politic[1].checked=true;</script>';
+    if ($_POST["politic"]  == "2"){
+      echo '<script type="text/javascript"> $("#politicTrump").prop("checked", true);$("#politicTrump").parent().addClass("active");</script>';
     }
 }
 
@@ -339,7 +340,7 @@ if (mysqli_num_rows($result) > 0) {
     while($row = mysqli_fetch_assoc($result)) {
         echo   $row["staat_kennung"] . ': {
                         "attrs": {
-                            "href": "' . $row["staat_detail"] . '",
+                            "href": "detailpage.php?staatID=' . $row["staat_id"] . '",
                             "fill":"#a4e100" 
                         },
                         "tooltip": {

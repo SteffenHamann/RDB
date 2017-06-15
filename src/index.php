@@ -107,7 +107,7 @@
                       <option value="34">Großhandel</option>
                       <option value="51">Finanzwesen</option>
                       <option value="11">Bauwesen</option>
-                      <option value="78">Gastronomie und Hotegewerbe</option>
+                      <option value="78">Gastronomie und Hotelgewerbe</option>
                       <option value="65">Müllabfuhr</option>
                       <option value="10">Dienstleistungen</option>
                       <option value="36">Transportwesen</option>
