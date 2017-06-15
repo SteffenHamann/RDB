@@ -28,6 +28,7 @@
 <!-- TODO LIST
   1. Help
   2. Author
+  3. Detailpage als Modalbox?
 -->
 
 </head>
@@ -63,7 +64,7 @@
       <!-- HIER BEGINNT DIE SIDEBAR -->
       <div class="col-sm-3 col-md-2 sidebar">
         <div class="nav nav-sidebar">
-          <form action="./action_page.php" method="post">
+          <form name="filter" action="./action_page.php" method="post">
             <!-- EINWOHNERZAHL TAB -->
             <button type="button" data-id="u1" class="dropdown-header">Einwohner</button>
             <ul class="dropdown-item" id="u1">
@@ -135,14 +136,14 @@
             <ul class="dropdown-item" id="u3">
               <div data-toggle="buttons">
                 <label class ="btn btn-default" style="float:left;">
-                  <input type="radio" class="btn btn-default" name="politic" id="politic" value="2"> Trump
+                  <input type="radio" class="btn btn-default" name="politic" id="politicTrump" value="2"> Trump
                 </label>
                 <label class ="btn btn-default" style="margin-bottom:10px; margin-right: 20%; float:right;">
-                  <input type="radio" class="btn btn-default" name="politic" id="politic" value="1"> Hillary
+                  <input type="radio" class="btn btn-default" name="politic" id="politicHilary" value="1"> Hillary
                 </label>
               </div>
             </ul>
-            <button input type="submit" id="submit-button" class="submit-button" value="Submit" disabled>Submit</button>
+            <button input type="submit" id="submit-button" class="submit-button" value="Submit" disabled>Submit</button> <!-- TODO Nach Submit Felder befüllt lassen -->
           </form>
           <button type="button" onclick="test()" class="clear-button">Reset</button>
         </div>

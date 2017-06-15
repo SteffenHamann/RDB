@@ -69,22 +69,22 @@
             <button type="button" data-id="u1" class="dropdown-header">Einwohner</button>
             <ul class="dropdown-item" id="u1">
               <li>
-                <p>Einwohneranzahl:<span style="padding-left: 10px;"><input type="text" Placeholder="in. Mio" size="2" class="right" name="population" id="population"></span></p>
+                <p>Einwohneranzahl:<span style="padding-left: 10px;"><input type="text" Placeholder="in. Mio" size="2" class="right" name="population" id="population" value="<?php echo $_POST["population"] ?>"></span></p>
               </li>
               <li>
                 <p style="font-size: 25px;">Anteil Ethnien...</p>
               </li>
               <li>
-                <p>Weiß<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percWhite" id="percWhite"></span></p>
+                <p>Weiß<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percWhite" id="percWhite" value="<?php echo $_POST["percWhite"] ?>"></span></p>
               </li>
               <li>
-                <p>Schwarz<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percBlack" id="percBlack"></span></p>
+                <p>Schwarz<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percBlack" id="percBlack" value="<?php echo $_POST["percBlack"] ?>"></span></p>
               </li>
               <li>
-                <p>Latein<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percLatin" id="percLatin"></span></p>
+                <p>Latein<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percLatin" id="percLatin" value="<?php echo $_POST["percLatin"] ?>"></span></p>
               </li>
               <li>
-                <p>Asien<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percAsian" id="percAsian"></span></p>
+                <p>Asien<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percAsian" id="percAsian" value="<?php echo $_POST["percAsian"] ?>"></span></p>
               </li>
             </ul>
 
@@ -123,10 +123,10 @@
                     </select>
               </li>
               <li>
-                <p>Pro Kopf einkommen<span style="padding-left: 10px;"><input type="text" Placeholder=" in K" size="2"  class="right" name="perHeadIncome" id="perHeadIncome"></span></p>
+                <p>Pro Kopf einkommen<span style="padding-left: 10px;"><input type="text" Placeholder=" in K" size="2"  class="right" name="perHeadIncome" id="perHeadIncome" value="<?php echo $_POST["perHeadIncome"] ?>"></span></p>
               </li>
               <li>
-                <p>Arbeitslosenrate<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="joblessRate" id="joblessRate"></span></p>
+                <p>Arbeitslosenrate<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="joblessRate" id="joblessRate" value="<?php echo $_POST["joblessRate"] ?>"></span></p>
               </li>
 
             </ul>
@@ -183,34 +183,6 @@
   <script src="function.js"></script>
   <script src="../mapael/jquery.mapael.js"></script>
   <script src="../mapael/usa_states.js"></script>
-
-
-      <script type="text/javascript">
-        $(function () {
-            $(".mapcontainer").mapael({
-                map: {
-                    name: "usa_states",
-                    defaultArea: {
-                        attrs: {
-                           
-                        }
-                    }
-                },
-                areas: {
-                    "HI": {
-                        "value": "xxx",
-                        "attrs": {
-                            "href": "www.google.com",
-                            "fill":"#a4e100" 
-                        },
-                        "tooltip": {
-                            "content": "Hawaii"
-                        }
-                    },          
-                }
-            });
-      });
-  </script>
 
 </body>
 
@@ -305,6 +277,7 @@ if($_POST["percAsian"] != ""){
 
 if($_POST["economy"] != ""){
     $sql = $sql . "INDUSTRY_ID = " . $_POST["economy"] . " AND ";
+    echo '<script type="text/javascript">document.getElementById("economy").value = ' . $_POST["economy"] . ';</script>';
 }
 
 if($_POST["perHeadIncome"] != ""){
@@ -320,8 +293,13 @@ if($_POST["joblessRate"] != ""){
 if($_POST["politic"] != ""){
     $sql = $sql . "STAERKSTE_PARTEI_ID = " . $_POST["politic"]  . " AND ";
     $sql2 = $sql2 . "STAERKSTE_PARTEI_ID = " . $_POST["politic"]  . " AND ";
+    if (["politic"] == "1"){
+      echo '<script>document.filter.politic[0].checked=true;</script>';
+    }
+    if (["politic"] == "2"){
+      echo '<script>document.filter.politic[1].checked=true;</script>';
+    }
 }
-
 
 //echo substr($sql2, 0, -5); //ONLY FOR TEST
 
