@@ -95,7 +95,11 @@
                 <p style="font-size: 25px;">Stärkste Wirtschaft</p>
               </li>
               <li><select style="margin-bottom: 10px;" class="" name="economy" id="economy">
+<<<<<<< HEAD
                       <option value="" selected>Wirtschaft wählen</option>
+=======
+                      <option value="" >Wirtschaft wählen</option>
+>>>>>>> 03562bc17e4d4b41ba5babc3bd843cd581f6754e
                       <option value="12">Warrenherrstellung</option>
                       <option value="82">Regierung</option>
                       <option value="56">Immobilien</option>
