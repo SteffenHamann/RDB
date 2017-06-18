@@ -178,7 +178,7 @@ $row3 = mysqli_fetch_assoc($result2);
                 </script>";
                 ?>  
                     </div>
-                    <div class="col-md-4 col-lg-4">
+                    <div class="col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2">
                 <?php
                 //Wahlergebnisse
                 //echo $row1['REPUBLICAN_VOTES_PERCENT'].";".$row1['DEMOCRATS_VOTES_PERCENT'].";".(100-$row1['DEMOCRATS_VOTES_PERCENT']-$row1['REPUBLICAN_VOTES_PERCENT']);
@@ -221,7 +221,7 @@ $row3 = mysqli_fetch_assoc($result2);
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row" style="margin-top: 50px">
                     <div class="col-md-4 col-lg-4">
                 
                 <?php
@@ -309,7 +309,7 @@ $row3 = mysqli_fetch_assoc($result2);
                 ?>
 
                 </div>
-                    <div class="col-md-4 col-lg-4">
+                    <div class="col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2">
 
                 <?php
                 //WirtschaftUmsatzAnteil
