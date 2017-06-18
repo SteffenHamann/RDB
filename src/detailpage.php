@@ -1,4 +1,6 @@
 <?php
+error_reporting(0);
+
     //------------------- AB HIER IST DEIN PHP PART @YANNICK
 
     //@Yannick
@@ -108,8 +110,7 @@ $row3 = mysqli_fetch_assoc($result2);
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
-                Allgemeine Daten hier </br>
+            <div class="col-md-3 col-lg-3">
                 
                 <table class="table table-striped table-bordered table-hover"> 
                     <tbody>
@@ -134,10 +135,10 @@ $row3 = mysqli_fetch_assoc($result2);
                 </table>
                 
             </div>
-            <div class="col-md-7 col-lg-4 col-sm-12 col-xs-12">
-                Diagramme hier
+            
+            <div class="col-md-9 col-lg-9">    
                 <div class="row">
-                    <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+                    <div class="col-md-4 col-lg-4">
                 <?php
 
                 //Diagramm Ethnische Gruppen als PolarArea-Chart
@@ -175,8 +176,9 @@ $row3 = mysqli_fetch_assoc($result2);
                     }
                 });
                 </script>";
-                ?>
-                
+                ?>  
+                    </div>
+                    <div class="col-md-4 col-lg-4">
                 <?php
                 //Wahlergebnisse
                 //echo $row1['REPUBLICAN_VOTES_PERCENT'].";".$row1['DEMOCRATS_VOTES_PERCENT'].";".(100-$row1['DEMOCRATS_VOTES_PERCENT']-$row1['REPUBLICAN_VOTES_PERCENT']);
@@ -216,53 +218,13 @@ $row3 = mysqli_fetch_assoc($result2);
                 });
                 </script>";
                 ?>
+                    </div>
                 </div>
 
+                <div class="row">
+                    <div class="col-md-4 col-lg-4">
                 
                 <?php
-                //Wahergebnisse in Zahlen
-                echo "<canvas id='VoteNumChart' width='200' height='200'></canvas>";
-                echo "<script src='/RDB/src/Chart.js'></script>";             
-                echo "<script>
-                 new Chart(document.getElementById('VoteNumChart'), {
-                    type: 'bar',
-                    data: {
-                    labels: ['Republicans','Democrats'],
-                    datasets: [{
-                        label: 'Vote Results (Numbers)',
-                        backgroundColor: ['#70a463 ', '#333876 '],
-                        data: [".$row1['REPUBLICAN_VOTES_NUMBERS'].",".$row1['DEMOCRATS_VOTES_NUMBERS']."]
-                    }]
-                    },
-                    
-                    options: {
-                        tooltips: {
-                            callbacks: {
-                                label: function(tooltipItem, data) {
-                                //get the concerned dataset
-                                var dataset = data.datasets[tooltipItem.datasetIndex];
-                                return data.labels[tooltipItem.index]+ ': ' + dataset.data[tooltipItem.index] + ' Votes';
-                                }
-                            }
-                        },
-                        legend: { 
-                            position: 'bottom',
-                        },
-                        scales: {
-                            yAxes: [{
-                                ticks: {
-                                    beginAtZero: true
-                                }
-                            }]
-                        },
-                        title: {
-                            display: true,
-                            text: 'Vote Results (percentage) in ".$row1['STAAT_NAME']." in which ".$row3['KANDIDAT_NAME']." won'
-                        }
-                    },
-                    
-                });
-                </script>";
 
                 //WirtschaftsDiagrammUmsatz
                 $industrydata = array();
@@ -327,6 +289,11 @@ $row3 = mysqli_fetch_assoc($result2);
                                     labelString: 'Dollar'
                                 }
                                 }],
+                                xAxes: [{ 
+                                scaleLabel: {
+                                    display: false,
+                                }
+                                }],
                             },
                             legend: { 
                                 position: 'right',
@@ -341,6 +308,8 @@ $row3 = mysqli_fetch_assoc($result2);
                 </script>";
                 ?>
 
+                </div>
+                    <div class="col-md-4 col-lg-4">
 
                 <?php
                 //WirtschaftUmsatzAnteil
@@ -391,6 +360,7 @@ $row3 = mysqli_fetch_assoc($result2);
                                 }
                             },
                             legend: { 
+                                //display: false,
                                 position: 'right',
                             },
                             title: {
@@ -402,8 +372,10 @@ $row3 = mysqli_fetch_assoc($result2);
                 </script>";
                 ?>
                 </div>
+                </div>
+                </div>
             </div>
-        </div>
+        </div>    
     </div>
 
  <!-- BIS HIER HTML PART -->   
@@ -416,6 +388,7 @@ $row3 = mysqli_fetch_assoc($result2);
                 <a href="index.php" class="btn btn-danger" style="float:right">Zurück</a>
             </div>
         </div>
+
     </div>
 
 
