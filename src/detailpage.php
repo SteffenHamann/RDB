@@ -290,9 +290,11 @@ $row3 = mysqli_fetch_assoc($result2);
                                 }
                                 }],
                                 xAxes: [{ 
-                                scaleLabel: {
-                                    display: false,
-                                }
+                                    ticks: {
+                                        stepSize: 1,
+                                        min: 0,
+                                        autoSkip: false
+                                    }
                                 }],
                             },
                             legend: { 
@@ -309,7 +311,7 @@ $row3 = mysqli_fetch_assoc($result2);
                 ?>
 
                 </div>
-                    <div class="col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2">
+                    <div class="col-md-6 col-lg-6 col-md-offset-2 col-lg-offset-2">
 
                 <?php
                 //WirtschaftUmsatzAnteil
@@ -360,8 +362,13 @@ $row3 = mysqli_fetch_assoc($result2);
                                 }
                             },
                             legend: { 
-                                //display: false,
+                                display: true,
                                 position: 'right',
+                                
+                                labels: {
+                                    boxWidth: 10,
+                                    fontSize: 12
+                                }
                             },
                             title: {
                                 display: true,
