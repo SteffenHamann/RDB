@@ -146,6 +146,7 @@
             <button input type="submit" id="submit-button" class="submit-button" value="Submit" disabled>Submit</button> <!-- TODO Nach Submit Felder befüllt lassen -->
           </form>
           <button type="button" onclick="test()" class="clear-button">Reset</button>
+          <input type="button"  id="explore-button" class="explore-button" onclick="location.href='action_page.php?explore=1';" value="Explore" />
         </div>
       </div>
     </div>

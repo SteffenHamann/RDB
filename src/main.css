@@ -59,3 +59,28 @@
   background-color: #4CAF50;
   color: #666666;
 }
+
+.explore-button {
+    background-color: #eabe47;
+    color: #ffffff;
+    width: 100%;
+    border : none;
+    padding: 5px 5px 5px 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+    position: absolute;
+    right:    0;
+    bottom:   0;
+}
+
+.explore-button:hover {
+    background-color: #cea947;
+}
+
+.explore-button:disabled{
+  cursor: not-allowed;
+  opacity: 0.65; 
+  background-color: #cea947;
+  color: #666666;
+}

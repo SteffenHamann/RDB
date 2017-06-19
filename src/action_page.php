@@ -69,22 +69,22 @@
             <button type="button" data-id="u1" class="dropdown-header">Einwohner</button>
             <ul class="dropdown-item" id="u1">
               <li>
-                <p>Einwohneranzahl:<span style="padding-left: 10px;"><input type="text" Placeholder="in. Mio" size="2" class="right" name="population" id="population" value="<?php echo $_POST["population"] ?>"></span></p>
+                <p>Einwohneranzahl:<span style="padding-left: 10px;"><input type="text" Placeholder="in. Mio" size="2" class="right" name="population" id="population" value="<?php error_reporting(0); if($_GET["explore"] == 1){echo "";}else{echo $_POST["population"];} ?>"></span></p>
               </li>
               <li>
                 <p style="font-size: 25px;">Anteil Ethnien...</p>
               </li>
               <li>
-                <p>Weiß<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percWhite" id="percWhite" value="<?php echo $_POST["percWhite"] ?>"></span></p>
+                <p>Weiß<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percWhite" id="percWhite" value="<?php error_reporting(0); if($_GET["explore"] == 1){echo "";}else{echo $_POST["üercWhite"];} ?>"></span></p>
               </li>
               <li>
-                <p>Schwarz<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percBlack" id="percBlack" value="<?php echo $_POST["percBlack"] ?>"></span></p>
+                <p>Schwarz<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percBlack" id="percBlack" value="<?php error_reporting(0); if($_GET["explore"] == 1){echo "";}else{echo $_POST["percBlack"];} ?>"></span></p>
               </li>
               <li>
-                <p>Latein<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percLatin" id="percLatin" value="<?php echo $_POST["percLatin"] ?>"></span></p>
+                <p>Latein<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percLatin" id="percLatin" value="<?php error_reporting(0); if($_GET["explore"] == 1){echo "";}else{echo $_POST["percLatin"];} ?>"></span></p>
               </li>
               <li>
-                <p>Asien<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percAsian" id="percAsian" value="<?php echo $_POST["percAsian"] ?>"></span></p>
+                <p>Asien<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percAsian" id="percAsian" value="<?php error_reporting(0); if($_GET["explore"] == 1){echo "";}else{echo $_POST["percAsian"];} ?>"></span></p>
               </li>
             </ul>
 
@@ -123,10 +123,10 @@
                     </select>
               </li>
               <li>
-                <p>Pro Kopf einkommen<span style="padding-left: 10px;"><input type="text" Placeholder=" in K" size="2"  class="right" name="perHeadIncome" id="perHeadIncome" value="<?php echo $_POST["perHeadIncome"] ?>"></span></p>
+                <p>Pro Kopf einkommen<span style="padding-left: 10px;"><input type="text" Placeholder=" in K" size="2"  class="right" name="perHeadIncome" id="perHeadIncome" value="<?php error_reporting(0); if($_GET["explore"] == 1){echo "";}else{echo $_POST["perHeadIncome"];} ?>"></span></p>
               </li>
               <li>
-                <p>Arbeitslosenrate<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="joblessRate" id="joblessRate" value="<?php echo $_POST["joblessRate"] ?>"></span></p>
+                <p>Arbeitslosenrate<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="joblessRate" id="joblessRate" value="<?php error_reporting(0); if($_GET["explore"] == 1){echo "";}else{echo $_POST["joblessRate"];} ?>"></span></p>
               </li>
 
             </ul>
@@ -146,6 +146,7 @@
             <button input type="submit" id="submit-button" class="submit-button" value="Submit" disabled>Submit</button>
           </form>
           <button type="button" onclick="test()" class="clear-button">Reset</button>
+          <input type="button" id="explore-button"  class="explore-button" onclick="location.href='action_page.php?explore=1';" value="Explore" />
         </div>
       </div>
     </div>
@@ -161,8 +162,6 @@
         </div>
       </div>
     </div>
-
-
 
   </div>
   </div>
@@ -196,6 +195,14 @@
 
 <?php
 error_reporting(0);
+
+if($_GET["explore"]==1){
+  echo "<script>$('#explore-button').prop('disabled', true);</script>";
+}
+
+
+
+
 
 //----------------Verbindung zur DB----------------    
 
@@ -247,6 +254,15 @@ SELECT
     , staaten.staat_detail
   FROM staaten 
   WHERE ";
+
+$sql3 = "
+SELECT 
+      staaten.staat_id
+    , staaten.staat_name
+    , staaten.staat_kennung
+    , staaten.staat_detail
+FROM 
+staaten";
 
   
 
@@ -307,13 +323,16 @@ if($_POST["politic"] != ""){
 
 //-------------------SQL Abfrage--------------------
 
+
 if($_POST["economy"] != ""){
     $result = mysqli_query($conn, substr($sql, 0, -5));
+}
+if($_GET["explore"] == 1){
+    $result = mysqli_query($conn,$sql3);
 }
 else{
     $result = mysqli_query($conn, substr($sql2, 0, -5));   
 }
-
 //--------------------------------------------------
 
 
@@ -355,6 +374,7 @@ echo '          }
         });   
        </script>';
 
+
 //echo "id: " . $row["staat_id"] . " - Name: " . $row["staat_name"] . " Hauptstadt: " . $row["hauptstadt"] . " Flagge: <img src=" .$row['flagge']. ">  <br>";// ---- MIT FLAGGE
 
 
@@ -364,7 +384,3 @@ echo '          }
 mysqli_close($conn); //close connection to DB
 
 ?>
-
-
-
-
