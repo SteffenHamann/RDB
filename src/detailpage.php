@@ -115,16 +115,16 @@ $row3 = mysqli_fetch_assoc($result2);
                 <table class="table table-striped table-bordered table-hover"> 
                     <tbody>
                         <?php
-                        echo "<p><img src='".$row1['FLAGGE']."' /></p>"; 
+                        echo "<p><img src='".$row1['FLAGGE']."' height='50%' width='60%' /></p>"; 
                         echo "<tr>
                         <td>Name: </td><td>".$row1['STAAT_NAME']."</td></tr>
-                        <tr><td>Kennung:</td><td>".$row1['STAAT_KENNUNG']."</td></tr>
-                        <tr><td>Hauptstadt</td><td>".$row1['HAUPTSTADT']."</td></tr>
-                        <tr><td>Einwohner</td><td>".$row1['EINWOHNER']."</td></tr>
-                        <tr><td>Fläche</td><td>".$row1['FLAECHE']."km²</td></tr>
-                        <tr><td>Bevölkerungsdichte</td><td>".$row1['BEVOELK_DICHTE']." pro km²</td></tr>
-                        <tr><td>Arbeitslosenrate</td><td>".$row1['ARBEITSLOSENRATE']."%</td></tr>
-                        <tr><td>Pro-Kopf-Einkommen: </td><td>".$row1['PRO_KOPF_EINKOMMEN']."$</td></tr>
+                        <tr><td>Abbreviation:</td><td>".$row1['STAAT_KENNUNG']."</td></tr>
+                        <tr><td>Capital:</td><td>".$row1['HAUPTSTADT']."</td></tr>
+                        <tr><td>Population:</td><td>".$row1['EINWOHNER']."</td></tr>
+                        <tr><td>Area:</td><td>".$row1['FLAECHE']."km²</td></tr>
+                        <tr><td>Density of population:</td><td>".$row1['BEVOELK_DICHTE']." pro km²</td></tr>
+                        <tr><td>Rate of unemployment:</td><td>".$row1['ARBEITSLOSENRATE']."%</td></tr>
+                        <tr><td>Income per capita: </td><td>".$row1['PRO_KOPF_EINKOMMEN']."$</td></tr>
                         ";
                         ?>
                         
