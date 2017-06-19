@@ -106,11 +106,11 @@ $row3 = mysqli_fetch_assoc($result2);
 
 <!-- AB HIER IST DEIN HTML PART @YANNICK -->
 
-<body>
+<body style="padding-top: 0px">
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3 col-lg-3">
+            <div class="col-md-3 col-lg-3" style="background: #f5f5f5; height: 100vh; border-right: 2px dashed black">
                 
                 <table class="table table-striped table-bordered table-hover"> 
                     <tbody>
@@ -133,7 +133,8 @@ $row3 = mysqli_fetch_assoc($result2);
 
                     </tbody>
                 </table>
-                
+                <a href="index.php" class="btn btn-danger" style="float:right">Zurück</a>
+                <a href="index.php" class="btn btn-success" style="float:right; margin-right: 20px">Random</a>
             </div>
             
             <div class="col-md-9 col-lg-9">    
@@ -143,7 +144,7 @@ $row3 = mysqli_fetch_assoc($result2);
 
                 //Diagramm Ethnische Gruppen als PolarArea-Chart
                 echo "<canvas id='ethnicsChart' width='200' height='200'></canvas>";
-                echo "<script src='/RDB/src/Chart.js'></script>";             
+                echo "<script src='/RDB/Chartjs/Chart.js'></script>";             
                 echo "<script>
                  new Chart(document.getElementById('ethnicsChart'), {
                     type: 'polarArea',
@@ -183,7 +184,7 @@ $row3 = mysqli_fetch_assoc($result2);
                 //Wahlergebnisse
                 //echo $row1['REPUBLICAN_VOTES_PERCENT'].";".$row1['DEMOCRATS_VOTES_PERCENT'].";".(100-$row1['DEMOCRATS_VOTES_PERCENT']-$row1['REPUBLICAN_VOTES_PERCENT']);
                 echo "<canvas id='VoteChart' width='200' height='200'></canvas>";
-                echo "<script src='/RDB/src/Chart.js'></script>";             
+                echo "<script src='/RDB/Chartjs/Chart.js'></script>";             
                 echo "<script>
                  new Chart(document.getElementById('VoteChart'), {
                     type: 'pie',
@@ -237,7 +238,7 @@ $row3 = mysqli_fetch_assoc($result2);
                 }
 
                 echo "<canvas id='EconomiesChart' width='200' height='200'></canvas>";
-                echo "<script src='/RDB/src/Chart.js'></script>";             
+                echo "<script src='/RDB/Chartjs/Chart.js'></script>";             
                 echo "<script>
                     new Chart(document.getElementById('EconomiesChart'), {
                         type: 'bar',
@@ -293,6 +294,8 @@ $row3 = mysqli_fetch_assoc($result2);
                                     ticks: {
                                         stepSize: 1,
                                         min: 0,
+                                        maxRotation: 105,
+                                        minRotation: 60,
                                         autoSkip: false
                                     }
                                 }],
@@ -311,12 +314,12 @@ $row3 = mysqli_fetch_assoc($result2);
                 ?>
 
                 </div>
-                    <div class="col-md-6 col-lg-6 col-md-offset-2 col-lg-offset-2">
+                    <div class="col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2">
 
                 <?php
                 //WirtschaftUmsatzAnteil
                 echo "<canvas id='EconomiesVolumeChart' width='200' height='200'></canvas>";
-                echo "<script src='/RDB/src/Chart.js'></script>";             
+                echo "<script src='/RDB/Chartjs/Chart.js'></script>";             
                 echo "<script>
                     new Chart(document.getElementById('EconomiesVolumeChart'), {
                         type: 'pie',
@@ -362,7 +365,7 @@ $row3 = mysqli_fetch_assoc($result2);
                                 }
                             },
                             legend: { 
-                                display: true,
+                                display: false,
                                 position: 'right',
                                 
                                 labels: {
@@ -387,16 +390,6 @@ $row3 = mysqli_fetch_assoc($result2);
 
  <!-- BIS HIER HTML PART -->   
 
-
-    <!-- Button Leiste  -->
-    <div class="container">
-        <div class="row">
-            <div class="">
-                <a href="index.php" class="btn btn-danger" style="float:right">Zurück</a>
-            </div>
-        </div>
-
-    </div>
 
 
 
