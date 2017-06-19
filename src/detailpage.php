@@ -134,7 +134,7 @@ $row3 = mysqli_fetch_assoc($result2);
                     </tbody>
                 </table>
                 <a href="index.php" class="btn btn-danger" style="float:right">Zurück</a>
-                <a href="index.php" class="btn btn-success" style="float:right; margin-right: 20px">Random</a>
+                <a onclick="getRandomDetail()" class="btn btn-success" style="float:right; margin-right: 20px">Random</a>
             </div>
             
             <div class="col-md-9 col-lg-9" style="padding-top: 10px">    
@@ -412,6 +412,8 @@ $row3 = mysqli_fetch_assoc($result2);
     window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
   </script>
 
+
+  <script src="function.js"></script>
   <script src="../bootstrap/bootstrap.js"></script>
 
 </body>

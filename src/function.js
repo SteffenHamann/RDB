@@ -44,7 +44,15 @@ function test(){
     $('input[name="politic"]').prop('checked', false);
     $('input[name="politic"]').parent().removeClass('active');
     $('#submit-button').prop('disabled', true);
+}
 
+function getRandomDetail(){
+  let number = Math.floor(Math.random() * (50 - 0 + 1)) + 0;
+  let url = "detailpage.php?staatID=";
+
+  var urlParam = url.concat(number);
+  
+  window.open(urlParam,"_self")
 }
 
 
