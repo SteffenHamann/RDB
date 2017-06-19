@@ -137,7 +137,7 @@ $row3 = mysqli_fetch_assoc($result2);
                 <a href="index.php" class="btn btn-success" style="float:right; margin-right: 20px">Random</a>
             </div>
             
-            <div class="col-md-9 col-lg-9">    
+            <div class="col-md-9 col-lg-9" style="padding-top: 10px">    
                 <div class="row">
                     <div class="col-md-4 col-lg-4">
                 <?php
