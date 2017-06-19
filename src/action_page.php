@@ -276,7 +276,7 @@ if($_POST["percAsian"] != ""){
 }
 
 if($_POST["economy"] != ""){
-    $sql = $sql . "INDUSTRY_ID = " . $_POST["economy"] . " AND ";
+    $sql = $sql . "economydata.INDUSTRY_ID = " . $_POST["economy"] . " AND ";
     echo '<script type="text/javascript">document.getElementById("economy").value = ' . $_POST["economy"] . ';</script>';
 }
 
@@ -302,7 +302,7 @@ if($_POST["politic"] != ""){
     }
 }
 
-//echo substr($sql2, 0, -5); //ONLY FOR TEST
+//echo substr($sql, 0, -5); //ONLY FOR TEST
 
 
 //-------------------SQL Abfrage--------------------

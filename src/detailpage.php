@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+//error_reporting(0);
 
     //------------------- AB HIER IST DEIN PHP PART @YANNICK
 
@@ -44,10 +44,9 @@ error_reporting(0);
     ";
     
 
-    
-
     $result = mysqli_query($conn,$sql);
     $result2 = mysqli_query($conn,$sql2);
+    $result3 = mysqli_query($conn,$sql);
 
     if ( ! $result )
 {
@@ -235,11 +234,13 @@ $row3 = mysqli_fetch_assoc($result2);
                 $industrydata = array();
                 $industryName = array();
                 $industryVolume = array();
-                while($row2 = $result->fetch_assoc()){
+
+                while($row2 = mysqli_fetch_assoc($result3)){
                   array_push($industrydata,$row2['2016_Q3']);
                   array_push($industryName,$row2['INDUSTRY_NAME']);
                   array_push($industryVolume,$row2['INDUSTRIE_UMSATZ_ANTEIL']);
-                }
+                };
+
 
                 echo "<canvas id='EconomiesChart' width='200' height='200'></canvas>";
                 echo "<script src='/RDB/Chartjs/Chart.js'></script>";             
