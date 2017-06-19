@@ -45,14 +45,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="#">RDB SS2017</a>
+        <a class="navbar-brand" href="index.php">RDB SS2017</a>
       </div>
 
       <!-- HIER BEGINNT DER NAV HEADER -->
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Author</a></li>
-          <li><a href="#">Help</a></li>
+          <li>
+           <button type="button" style="color: #9d9d9d; padding-top: 15px; padding-bottom: 15px; background:transparent; border: none; margin-right: 20px;" data-toggle="modal" data-target="#author">Author</button>
+          </li>
+
+          <li>
+            <button type="button" style="color: #9d9d9d; padding-top: 15px; padding-bottom: 15px; background:transparent; border: none; margin-right: 20px;" data-toggle="modal" data-target="#help">Help</button>
+          </li>
         </ul>
       </div>
     </div>
@@ -184,6 +189,47 @@
   <script src="function.js"></script>
   <script src="../mapael/jquery.mapael.js"></script>
   <script src="../mapael/usa_states.js"></script>
+
+  <!-- Author Modal -->
+  <div class="modal fade" id="author" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Author</h4>
+        </div>
+        <div class="modal-body">
+          <center>Steffen Hamann & Yannick Collin</center>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Help Modal -->
+  <div class="modal fade" id="help" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Help</h4>
+        </div>
+        <div class="modal-body">
+          <center>This is an interacitve Map about the United States of America.</br>
+                  </br>
+                  Just fill our the Form and let the map show you which state will match your requiremts.</br>
+                  If you found a state you can click the staate to get even more detail information.</br>
+          </center>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
