@@ -115,7 +115,7 @@ $row3 = mysqli_fetch_assoc($result2);
                 <table class="table table-striped table-bordered table-hover"> 
                     <tbody>
                         <?php
-                        echo "<p><img src='".$row1['FLAGGE']."' height='50%' width='60%' /></p>"; 
+                        echo "<p><img src='".$row1['FLAGGE']."'width='100%' /></p>"; 
                         echo "<tr>
                         <td>Name: </td><td>".$row1['STAAT_NAME']."</td></tr>
                         <tr><td>Abbreviation:</td><td>".$row1['STAAT_KENNUNG']."</td></tr>
