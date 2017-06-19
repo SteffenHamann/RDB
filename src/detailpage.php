@@ -172,7 +172,9 @@ $row3 = mysqli_fetch_assoc($result2);
                         },
                         title: {
                             display: true,
-                            text: 'The ethnic Groups (percentage) in ".$row1['STAAT_NAME']."'
+                            text: 'The ethnic Groups (percentage) in ".$row1['STAAT_NAME']."',
+                            fontSize: 20,
+                            padding: 20
                         }
                     }
                 });
@@ -212,7 +214,9 @@ $row3 = mysqli_fetch_assoc($result2);
                         },
                         title: {
                             display: true,
-                            text: 'Vote Results (percentage) in ".$row1['STAAT_NAME']."'
+                            text: 'Vote Results (percentage) in ".$row1['STAAT_NAME']."',
+                            fontSize: 20,
+                            padding: 20
                         }
                     },
                     
@@ -306,7 +310,9 @@ $row3 = mysqli_fetch_assoc($result2);
                             },
                             title: {
                                 display: true,
-                                text: 'Industry volume (thousand) in ".$row1['STAAT_NAME']."'
+                                text: 'Industry volume (thousand) in ".$row1['STAAT_NAME']."',
+                                fontSize: 20,
+                                padding: 20
                             }
                         }
                     });
@@ -375,7 +381,9 @@ $row3 = mysqli_fetch_assoc($result2);
                             },
                             title: {
                                 display: true,
-                                text: 'Industry volume (percentage) in ".$row1['STAAT_NAME']."'
+                                text: 'Industry volume (percentage) in ".$row1['STAAT_NAME']."',
+                                fontSize: 20,
+                                padding: 20
                             }
                         }
                     });
