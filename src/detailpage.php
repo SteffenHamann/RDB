@@ -123,7 +123,7 @@ $row3 = mysqli_fetch_assoc($result2);
                         <tr><td>Population:</td><td>".$row1['EINWOHNER']."</td></tr>
                         <tr><td>Area:</td><td>".$row1['FLAECHE']."km²</td></tr>
                         <tr><td>Density of population:</td><td>".$row1['BEVOELK_DICHTE']." per km²</td></tr>
-                        <tr><td>Rate of unemployment:</td><td>".$row1['ARBEITSLOSENRATE']."%</td></tr>
+                        <tr><td>Unemployment rate:</td><td>".$row1['ARBEITSLOSENRATE']."%</td></tr>
                         <tr><td>Income per capita: </td><td>".$row1['PRO_KOPF_EINKOMMEN']."$</td></tr>
                         ";
                         ?>
