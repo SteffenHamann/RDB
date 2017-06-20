@@ -71,73 +71,73 @@
         <div class="nav nav-sidebar">
           <form name="filter" action="./action_page.php" method="post">
             <!-- EINWOHNERZAHL TAB -->
-            <button type="button" data-id="u1" class="dropdown-header">Einwohner</button>
+            <button type="button" data-id="u1" class="dropdown-header">Population</button>
             <ul class="dropdown-item" id="u1">
               <li>
-                <p>Einwohneranzahl:<span style="padding-left: 10px;"><input type="text" Placeholder="in. Mio" size="2" class="right" name="population" id="population"></span></p>
+                <p>Population:<span style="padding-left: 10px;"><input type="text" Placeholder="in mio." size="2" class="right" name="population" id="population"></span></p>
               </li>
               <li>
-                <p style="font-size: 25px;">Anteil Ethnien...</p>
+                <p style="font-size: 25px;">Ethnicities </p>
               </li>
               <li>
-                <p>Weiß<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percWhite" id="percWhite"></span></p>
+                <p>White<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percWhite" id="percWhite"></span></p>
               </li>
               <li>
-                <p>Schwarz<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percBlack" id="percBlack"></span></p>
+                <p>Black<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percBlack" id="percBlack"></span></p>
               </li>
               <li>
-                <p>Latein<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percLatin" id="percLatin"></span></p>
+                <p>Hispanic<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percLatin" id="percLatin"></span></p>
               </li>
               <li>
-                <p>Asien<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percAsian" id="percAsian"></span></p>
+                <p>Asian<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percAsian" id="percAsian"></span></p>
               </li>
             </ul>
 
             <!-- WIRTSCHAFT TAB -->
-            <button type="button" data-id="u2" class="dropdown-header">Wirtschaft</button>
+            <button type="button" data-id="u2" class="dropdown-header">Economy</button>
             <ul class="dropdown-item" id="u2">
               <li>
-                <p style="font-size: 25px;">Stärkste Wirtschaft</p>
+                <p style="font-size: 25px;">Strongest economy</p>
               </li>
-              <li><select style="margin-bottom: 10px;" class="" name="economy" id="economy">
-                      <option value="" selected>Wirtschaft wählen</option>
-                      <option value="12">Warrenherrstellung</option>
-                      <option value="82">Regierung</option>
-                      <option value="56">Immobilien</option>
-                      <option value="13">Langlebige Warrenherrstellung</option>
-                      <option value="70">Gesundheitswesen</option>
-                      <option value="35">Einzelhandel</option>
-                      <option value="25">Nicht langlebige Warrenherstellung</option>
-                      <option value="60">Technische Dienstleistungen</option>
-                      <option value="34">Großhandel</option>
-                      <option value="51">Finanzwesen</option>
-                      <option value="11">Bauwesen</option>
-                      <option value="78">Gastronomie und Hotelgewerbe</option>
-                      <option value="65">Müllabfuhr</option>
-                      <option value="10">Dienstleistungen</option>
-                      <option value="36">Transportwesen</option>
-                      <option value="81">Nicht staatlich</option>
-                      <option value="45">Presse</option>
-                      <option value="6">Bergbau</option>
-                      <option value="3">Landwirtschaft</option>
-                      <option value="64">Controlling</option>
-                      <option value="69">Bildunswesen</option>
-                      <option value="75">Entertaiment</option>
+              <li><select style="margin-bottom: 10px; font-size:13px" class="" name="economy" id="economy">
+                      <option value="" selected>--Choose branch--</option>
+                      <option value="3">Agriculture, forestry, fishing, and hunting</option>
+                      <option value="6">Mining</option>
+                      <option value="10">Utilities</option>
+                      <option value="11">Construction</option>
+                      <option value="12">Manufacturing</option>
+                      <option value="13">- Durable goods manufacturing</option>
+                      <option value="25">- Nondurable goods manufacturing</option>
+                      <option value="34">Wholesale trade</option>
+                      <option value="35">Retail trade</option>
+                      <option value="36">Transportation and warehousing</option>
+                      <option value="45">Information</option>
+                      <option value="51">Finance and insurance</option>
+                      <option value="56">Real estate and rental and leasing</option>
+                      <option value="60">Professional, scientific, & tech. services</option>
+                      <option value="64">Management of companies & enterprises</option>
+                      <option value="65">Admin. & waste managem. services</option>
+                      <option value="69">Educational services</option>
+                      <option value="70">Health care and social assistance</option>
+                      <option value="75">Arts, entertainment, and recreation</option>
+                      <option value="78">Accommodation and food services</option>
+                      <option value="81">Other services, except government</option>
+                      <option value="82">Government</option>
 
 
                     </select>
               </li>
               <li>
-                <p>Pro Kopf einkommen<span style="padding-left: 10px;"><input type="text" Placeholder=" in K" size="2"  class="right" name="perHeadIncome" id="perHeadIncome"></span></p>
+                <p>Income per head<span style="padding-left: 10px;"><input type="text" Placeholder=" in k" size="2"  class="right" name="perHeadIncome" id="perHeadIncome"></span></p>
               </li>
               <li>
-                <p>Arbeitslosenrate<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="joblessRate" id="joblessRate"></span></p>
+                <p>Unemployment rate<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="joblessRate" id="joblessRate"></span></p>
               </li>
 
             </ul>
             
             <!-- POLITIK TAB -->
-            <button type="button" data-id="u3" class="dropdown-header">Politisch</button>
+            <button type="button" data-id="u3" class="dropdown-header">Vote 2016</button>
             <ul class="dropdown-item" id="u3">
               <div data-toggle="buttons">
                 <label class ="btn btn-default" style="float:left;">
