@@ -74,22 +74,22 @@
             <button type="button" data-id="u1" class="dropdown-header">Population</button>
             <ul class="dropdown-item" id="u1">
               <li>
-                <p>Population:<span style="padding-left: 10px;"><input type="text" Placeholder="in mio." size="2" class="right" name="population" id="population"></span></p>
+                <p>Population:<span style="padding-left: 10px;"><input type="text" Placeholder="in mio." size="2" class="right" name="population" id="population" value="<?php error_reporting(0); echo $_POST["population"]; ?>"></span></p>
               </li>
               <li>
                 <p style="font-size: 25px;">Ethnicities</p>
               </li>
               <li>
-                <p>White<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percWhite" id="percWhite"></span></p>
+                <p>White<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percWhite" id="percWhite" value="<?php error_reporting(0); echo $_POST["percWhite"]; ?>"></span></p>
               </li>
               <li>
-                <p>Black<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percBlack" id="percBlack"></span></p>
+                <p>Black<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percBlack" id="percBlack" value="<?php error_reporting(0); echo $_POST["percBlack"]; ?>"></span></p>
               </li>
               <li>
-                <p>Hispanic<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percLatin" id="percLatin"></span></p>
+                <p>Hispanic<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percLatin" id="percLatin" value="<?php error_reporting(0); echo $_POST["percLatin"]; ?>"></span></p>
               </li>
               <li>
-                <p>Asian<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percAsian" id="percAsian"></span></p>
+                <p>Asian<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="percAsian" id="percAsian" value="<?php error_reporting(0); echo $_POST["percAsian"]; ?>"></span></p>
               </li>
             </ul>
 
@@ -128,10 +128,10 @@
                     </select>
               </li>
               <li>
-                <p>Income per head<span style="padding-left: 10px;"><input type="text" Placeholder=" in k" size="2"  class="right" name="perHeadIncome" id="perHeadIncome"></span></p>
+                <p>Income per head<span style="padding-left: 10px;"><input type="text" Placeholder=" in k" size="2"  class="right" name="perHeadIncome" id="perHeadIncome" value="<?php error_reporting(0); echo $_POST["perHeadIncome"]; ?>"></span></p>
               </li>
               <li>
-                <p>Unemployment rate<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="joblessRate" id="joblessRate"></span></p>
+                <p>Unemployment rate<span style="padding-left: 10px;"><input type="text" Placeholder=" in %" size="2" class="right" name="joblessRate" id="joblessRate" value="<?php error_reporting(0); echo $_POST["joblessRate"]; ?>"></span></p>
               </li>
 
             </ul>
