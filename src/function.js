@@ -47,7 +47,8 @@ function test(){
 }
 
 function getRandomDetail(){
-  let number = Math.floor(Math.random() * (50 - 0 + 1)) + 0;
+  let number = Math.floor(Math.random() * (50)) + 1;
+  console.log(number);
   let url = "detailpage.php?staatID=";
 
   var urlParam = url.concat(number);

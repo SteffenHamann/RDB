@@ -99,7 +99,7 @@
               <li>
                 <p style="font-size: 25px;">Strongest economy</p>
               </li>
-              <li><select style="margin-bottom: 10px;" class="" name="economy" id="economy">
+              <li><select style="margin-bottom: 10px; font-size:13px" class="" name="economy" id="economy">
                       <option value="" selected>--Choose branch--</option>
                       <option value="3">Agriculture, forestry, fishing, and hunting</option>
                       <option value="6">Mining</option>
@@ -114,9 +114,9 @@
                       <option value="45">Information</option>
                       <option value="51">Finance and insurance</option>
                       <option value="56">Real estate and rental and leasing</option>
-                      <option value="60">Professional, scientific, and technical services</option>
-                      <option value="64">Management of companies and enterprises</option>
-                      <option value="65">Administrative and waste management services</option>
+                      <option value="60">Professional, scientific, & tech. services</option>
+                      <option value="64">Management of companies & enterprises</option>
+                      <option value="65">Admin. & waste managem. services</option>
                       <option value="69">Educational services</option>
                       <option value="70">Health care and social assistance</option>
                       <option value="75">Arts, entertainment, and recreation</option>
