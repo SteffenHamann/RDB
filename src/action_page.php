@@ -243,7 +243,7 @@
 
 
 <?php
-error_reporting(0);
+//error_reporting(0);
 
 if($_GET["explore"]==1){
   echo "<script>$('#explore-button').prop('disabled', true);</script>";
@@ -367,8 +367,7 @@ if($_POST["politic"] != ""){
     }
 }
 
-//echo substr($sql, 0, -5); //ONLY FOR TEST
-
+echo substr($sql, 0, -5); //ONLY FOR TEST
 
 //-------------------SQL Abfrage--------------------
 
@@ -376,7 +375,7 @@ if($_POST["politic"] != ""){
 if($_POST["economy"] != ""){
     $result = mysqli_query($conn, substr($sql, 0, -5));
 }
-if($_GET["explore"] == 1){
+else if($_GET["explore"] == 1){
     $result = mysqli_query($conn,$sql3);
 }
 else{
