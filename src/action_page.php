@@ -367,7 +367,7 @@ if($_POST["politic"] != ""){
     }
 }
 
-echo substr($sql, 0, -5); //ONLY FOR TEST
+//echo substr($sql, 0, -5); //ONLY FOR TEST
 
 //-------------------SQL Abfrage--------------------
 
